@@ -1,0 +1,349 @@
+.project-page-tags,
+.project-page-num {
+    font-weight: normal;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.project-page-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.4em;
+}
+
+.project-page-summary {
+    max-width: 300px;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.main-contents {
+    line-height: 1.3;
+}
+
+.tagline {
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+.page-directs {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.name-role-text {
+    font-family: 'Poppins', "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: var(--text);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.adjective {
+    font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: var(--tertiary);
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-head {
+    font-family: 'Poppins', "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.6em;
+    color: var(--text);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.about-me {
+    font-family: 'Playfair Display', Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: var(--tertiary);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-subheadings {
+    padding-top: 0.8em;
+    padding-bottom: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.about-side-note {
+    font-weight: lighter;
+}
+
+.project-info {
+    /* Headings */
+    h1 {
+        font-size: 2rem; /* 32px */
+        font-weight: 700;
+        margin: 2rem 0 1rem; /* top | horizontal | bottom */
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* 24px */
+        font-weight: 600;
+        margin: 1.75rem 0 0.75rem;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.25rem; /* 20px */
+        font-weight: 600;
+        margin: 1.5rem 0 0.6rem;
+    }
+
+    h4 {
+        font-size: 1.125rem; /* 18px */
+        font-weight: 500;
+        margin: 1.25rem 0 0.5rem;
+    }
+
+    /* Paragraphs and text elements */
+    p {
+        font-size: 1rem; /* 16px base */
+        margin: 1rem 0;
+    }
+
+    /* Lists */
+    ul,
+    ol {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+
+    li {
+        margin: 0.25rem 0;
+    }
+
+    /* Code blocks */
+    pre {
+        background: #f5f1e8;
+        padding: 1rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        margin: 1rem 0;
+        font-size: 0.875rem;
+        border: 1px solid #e0d4c1;
+    }
+
+    code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+            monospace;
+        background: #f5f1e8;
+        color: var(--tertiary);
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 0.875rem;
+    }
+
+    /* Links */
+    a {
+        color: #6f4e37;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+        color: #5d4037;
+    }
+
+    /* Horizontal rule */
+    hr {
+        margin: 2rem 0;
+        border: 0;
+        height: 1px;
+        background-color: #d7c9b7;
+    }
+}
+
+.blog-title {
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.blog-content {
+    font-family: "IBM Plex Sans", sans-serif;
+
+    h1 {
+        font-size: 2rem; /* 32px */
+        font-weight: 700;
+        margin: 2rem 0 1rem; /* top | horizontal | bottom */
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* 24px */
+        font-weight: 600;
+        margin: 1.75rem 0 0.75rem;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.25rem; /* 20px */
+        font-weight: 600;
+        margin: 1.5rem 0 0.6rem;
+    }
+
+    h4 {
+        font-size: 1.125rem; /* 18px */
+        font-weight: 500;
+        margin: 1.25rem 0 0.5rem;
+    }
+
+    /* Paragraphs and text elements */
+    p {
+        font-family: "Georgia", sans-serif;
+        font-size: 1.25rem; /* 16px base */
+        margin: 1rem 0;
+    }
+
+    /* Lists */
+    ul,
+    ol {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+    }
+
+    li {
+        font-family: "Georgia", sans-serif;
+        margin: 0.25rem 0;
+    }
+
+    /* Code blocks */
+    pre {
+        background: #f5f1e8;
+        padding: 1rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        margin: 1rem 0;
+        font-size: 0.875rem;
+        border: 1px solid #e0d4c1;
+    }
+
+    code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+            monospace;
+        background: #f5f1e8;
+        color: var(--tertiary);
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 0.875rem;
+    }
+
+    /* Links */
+    a {
+        font-family: "Georgia", sans-serif;
+        color: #0366d6;
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+        font-family: "Georgia", sans-serif;
+        color: #0550ae;
+    }
+
+    /* Horizontal rule */
+    hr {
+        margin: 2rem 0;
+        border: 0;
+        height: 1px;
+        background-color: #d7c9b7;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-contents {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+    }
+    .name-role-text {
+        font-weight: bold;
+        font-size: 2.1em;
+        color: var(--text);
+        letter-spacing: 2px;
+    }
+
+    .adjective {
+        font-style: italic;
+        color: var(--tertiary);
+        font-size: 2.1em;
+    }
+
+    .tagline {
+        line-height: 1;
+        font-size: 1.1em;
+    }
+
+    .about-head {
+        font-size: 1.6em;
+        color: var(--text);
+    }
+
+    .project-page-name {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2.3em;
+    }
+
+    .project-page-summary {
+        max-width: none;
+        font-weight: normal;
+        font-size: 1em;
+        font-family: "IBM Plex Sans", sans-serif;
+    }
+}
+@media only screen and (max-width: 372px) {
+    .main-contents {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+    }
+    .name-role-text {
+        font-weight: bold;
+        font-size: 1.6em;
+        color: var(--text);
+        letter-spacing: 2px;
+    }
+
+    .adjective {
+        font-style: italic;
+        color: var(--tertiary);
+        font-size: 1.6em;
+    }
+
+    .tagline {
+        line-height: 1;
+        font-size: 1em;
+    }
+
+    .about-page p,
+    a {
+        font-size: 0.8em;
+    }
+
+    .about-head {
+        font-size: 1.1em;
+        color: var(--text);
+    }
+
+    .project-page-name {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2.3em;
+    }
+
+    .project-page-summary {
+        max-width: 60vw;
+        font-weight: normal;
+        font-size: 0.9em;
+        font-family: "IBM Plex Sans", sans-serif;
+    }
+}
