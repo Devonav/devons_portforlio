@@ -51,7 +51,7 @@ function ProjectsListPage() {
   
   useEffect(() => {
     if (!isAutoPlaying) return;
-    
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
         const next = prev + 1;
@@ -61,8 +61,8 @@ function ProjectsListPage() {
         }
         return next;
       });
-    }, 4000);
-    
+    }, 8000);
+
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
@@ -133,11 +133,11 @@ function ProjectsListPage() {
                 <span style={{ opacity: 0 }}>PROJECTS</span>
               )}
             </h1>
-            <p className="text-lg opacity-70 mb-6">
+            <p className="text-lg text-white mb-6">
               A collection of individual and collaborative projects spanning machine learning, embedded systems, mobile development, and full-stack web applications.
             </p>
-            <p className="text-sm opacity-50">
-              Scroll or use mouse wheel to navigate • Auto-advancing every 4 seconds
+            <p className="text-sm text-white">
+              Scroll or use mouse wheel to navigate • Auto-advancing every 8 seconds
             </p>
           </motion.div>
           
@@ -173,32 +173,22 @@ function ProjectsListPage() {
                       animate={{
                         scale: isHovered ? 1.02 : 1,
                       }}
-                      transition={{ 
+                      transition={{
                         duration: 0.5,
                         ease: [0.19, 1, 0.22, 1] // Custom cubic bezier
                       }}
                     >
-                      {/* Background overlay effect */}
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-br from-[var(--tertiary)] to-transparent opacity-0 z-0"
-                        animate={{
-                          opacity: isHovered ? 0.1 : 0,
-                        }}
-                        transition={{ duration: 0.5 }}
-                      />
-                      
-                      
                       <Link
                         to={`/project/${project.id}`}
                         className="group relative block p-8 border border-gray-800 hover:border-[var(--tertiary)] transition-all duration-500 hover:shadow-2xl rounded-lg h-[400px] flex flex-col z-20"
                       >
                     <div className="flex items-start gap-6 h-full">
-                      <motion.div 
+                      <motion.div
                         className="w-16 flex-shrink-0"
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <span className="project-num text-2xl font-light opacity-60">
+                        <span className="project-num text-2xl font-light text-white">
                           {project.number}
                         </span>
                       </motion.div>
@@ -221,7 +211,7 @@ function ProjectsListPage() {
                           )}
                         </motion.h2>
                         
-                        <p className="text-lg mb-6 opacity-80 flex-1">
+                        <p className="text-lg mb-6 text-white flex-1">
                           {project.description}
                         </p>
                         
@@ -229,15 +219,15 @@ function ProjectsListPage() {
                           {project.tags.map((tag, tagIndex) => (
                             <motion.span
                               key={tag}
-                              className="project-tags text-sm px-4 py-2 bg-gray-800 text-gray-300 rounded-full"
+                              className="project-tags text-sm px-4 py-2 bg-gray-800 text-white rounded-full"
                               initial={{ opacity: 0, scale: 0.8 }}
-                              animate={{ 
+                              animate={{
                                 opacity: isHovered ? [0.7, 1, 0.9] : 0.7,
                                 scale: isHovered ? [0.8, 1.1, 1] : 0.8,
                                 backgroundColor: isHovered ? "var(--tertiary)" : "rgb(31, 41, 55)",
-                                color: isHovered ? "var(--main)" : "rgb(209, 213, 219)"
+                                color: isHovered ? "var(--main)" : "#ffffff"
                               }}
-                              transition={{ 
+                              transition={{
                                 duration: 0.4,
                                 delay: tagIndex * 0.1,
                                 ease: "easeOut"

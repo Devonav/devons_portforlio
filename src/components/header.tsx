@@ -49,16 +49,16 @@ const Header: React.FC = () => {
             </div>
           )}
 
-          <div
-            className="flex hover:cursor-pointer items-center p-2 transition-all duration-300 hover:scale-110 hover:rotate-3"
-            onClick={() => navigate("/")}
+          <Link
+            to="/"
+            className="flex items-center p-2 transition-all duration-300 hover:opacity-80"
           >
             <img
               src="/logo.svg"
               alt="Logo Icon"
               className={`${!isHomePage && "md:absolute md:left-[50%]"} h-11 w-11 md:h-12 md:w-12 transition-all duration-300`}
             />
-          </div>
+          </Link>
 
           <div className="md:hidden p-3">
             <MobileMenu />

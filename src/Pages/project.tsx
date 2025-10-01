@@ -8,7 +8,6 @@ import TypewritingEffect from "../components/typewritingEffect";
 function ProjectPage() {
   const { slug } = useParams();
   const [showTypewriter, setShowTypewriter] = useState(false);
-  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
 
   // Devon's actual project data
   const projects: Record<string, any> = {
@@ -443,58 +442,19 @@ function ProjectPage() {
             </motion.div>
           </motion.div>
           
-          <motion.div 
-            className="project-info prose prose-lg max-w-none relative"
-            onMouseEnter={() => setHoveredSection('content')}
-            onMouseLeave={() => setHoveredSection(null)}
+          <motion.div
+            className="project-info prose prose-lg max-w-none"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-          >
-            {/* Grid overlay for content */}
-            <motion.div
-              className="absolute inset-0 z-10 pointer-events-none"
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: hoveredSection === 'content' ? 1 : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="grid grid-cols-12 grid-rows-20 h-full gap-1 p-4">
-                {Array.from({ length: 240 }).map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="bg-[var(--tertiary)] opacity-20"
-                    initial={{ scale: 0, opacity: 0 }}
-                    animate={{
-                      scale: hoveredSection === 'content' ? [0, 1, 0.8] : 0,
-                      opacity: hoveredSection === 'content' ? [0, 0.2, 0.05] : 0,
-                    }}
-                    transition={{
-                      duration: 0.8,
-                      delay: hoveredSection === 'content' ? i * 0.003 : 0,
-                      ease: "easeOut"
-                    }}
-                  />
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="relative z-20"
-              animate={{
-                scale: hoveredSection === 'content' ? 1.01 : 1,
-              }}
-              transition={{ duration: 0.5 }}
-              dangerouslySetInnerHTML={{ 
-                __html: project.description
-                  .replace(/\n/g, '<br>')
-                  .replace(/## (.*?)<br>/g, '<h2>$1</h2>')
-                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                  .replace(/- (.*?)<br>/g, '<li>$1</li>') 
-              }} 
-            />
-          </motion.div>
+            dangerouslySetInnerHTML={{
+              __html: project.description
+                .replace(/\n/g, '<br>')
+                .replace(/## (.*?)<br>/g, '<h2>$1</h2>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/- (.*?)<br>/g, '<li>$1</li>')
+            }}
+          />
         </div>
       </div>
     </>
