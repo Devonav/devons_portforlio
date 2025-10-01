@@ -11,12 +11,12 @@ import Layout from "./components/layout";
 import { SpinnerDiamond } from "spinners-react";
 import { HelmetProvider } from "react-helmet-async";
 
-const HomePage = lazy(() => import("./pages/home"));
-const ProjectsListPage = lazy(() => import("./pages/projectsList"));
-const ProjectPage = lazy(() => import("./pages/project"));
-const AboutPage = lazy(() => import("./pages/about"));
-const BlogsListPage = lazy(() => import("./pages/blogsList"));
-const BlogPage = lazy(() => import("./pages/blog"));
+const HomePage = lazy(() => import("./Pages/home"));
+const ProjectsListPage = lazy(() => import("./Pages/projectsList"));
+const ProjectPage = lazy(() => import("./Pages/project"));
+const AboutPage = lazy(() => import("./Pages/about"));
+const BlogsListPage = lazy(() => import("./Pages/blogsList"));
+const BlogPage = lazy(() => import("./Pages/blog"));
 
 const Loading = () => (
   <div className="loading-container">
